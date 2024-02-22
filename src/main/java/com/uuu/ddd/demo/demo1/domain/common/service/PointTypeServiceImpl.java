@@ -17,6 +17,7 @@ public class PointTypeServiceImpl implements PointTypeService {
     @Override
     public UUID createPointType(PointType type) {
         UUID id = repository.save(type);
+        //UUID id = repository.save(null);
         return id;
     }
 
